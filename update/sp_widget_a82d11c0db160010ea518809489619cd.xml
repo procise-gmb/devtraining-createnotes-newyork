@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($http, spUtil) {
+    var c = this;
+    var submitting = false;
+    c.getIt = function() {
+        if (submitting) return;
+        $http.post(spUtil.getURL('sc_cat_item'), c.data.catItem).success(function(response) {
+            if (response.answer) {
+                c.req = response.answer;
+                c.req.page = c.req.table == 'sc_request' ? 'sc_request' : 'ticket';
+            }
+        });
+    }
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>//SCSS
+.img-bg {
+    padding: 5px;
+    background-color: $brand-primary;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.cat-icon {
+    display: block;
+    margin: -40px auto 0;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>my_widget_3</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>My widget 3</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+ var sys_id = $sp.getParameter("sys_id")
+    data.catItem = $sp.getCatalogItem(sys_id);
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-07 14:06:38</sys_created_on>
+        <sys_id>a82d11c0db160010ea518809489619cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>My widget 3</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_update_name>sp_widget_a82d11c0db160010ea518809489619cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 14:07:53</sys_updated_on>
+        <template><![CDATA[
+<div class="col-sm-4">
+  <div class="panel panel-default">
+    <div class="img-bg">
+      <img ng-src="{{::data.catItem.picture}}" class="img-responsive" />
+    </div>
+    <span class="cat-icon fa fa-stack fa-lg fa-3x hidden-xs">
+      <i class="fa fa-circle fa-stack-2x text-success"></i>
+      <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
+    </span>
+    <div class="panel-body">
+      <p class="lead text-center">{{::data.catItem.name}}</p>
+      <ul class="list-unstyled">
+        <li class="text-center" ng-if="::data.catItem.price">${Price}: {{::data.catItem.price}}</li>
+      </ul>
+      <sp-model form-model="::data.catItem" mandatory="mandatory"></sp-model>
+      <p ng-if="c.req" class="text-center text-success">
+        ${Request created!} <a href="?id={{c.req.page}}&table={{c.req.table}}&sys_id={{c.req.sys_id}}">{{c.req.number}}</a>
+      </p>
+      <button ng-if="!c.req" class="btn btn-default btn-block" ng-click="c.getIt()">${Get it}</button>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

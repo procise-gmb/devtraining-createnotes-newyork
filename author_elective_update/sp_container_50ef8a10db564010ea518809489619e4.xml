@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Work Notes - Test Page - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="work_notes">13274e98db164010ea51880948961904</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-08 12:26:50</sys_created_on>
+        <sys_id>50ef8a10db564010ea518809489619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Work Notes - Test Page - Container 1</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_update_name>sp_container_50ef8a10db564010ea518809489619e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-08 12:26:50</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</application>
+        <file_path/>
+        <instance_id>f8310663db761b006578f22ebf96194f</instance_id>
+        <instance_name>dev62605</instance_name>
+        <name>sp_container_50ef8a10db564010ea518809489619e4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Work Notes - Test Page - Container 1</name><order>1</order><sp_page display_value="work_notes">13274e98db164010ea51880948961904</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-08 12:26:50</sys_created_on><sys_id>50ef8a10db564010ea518809489619e4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Work Notes - Test Page - Container 1</sys_name><sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package><sys_policy/><sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope><sys_update_name>sp_container_50ef8a10db564010ea518809489619e4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-08 12:26:50</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>1292603479</payload_hash>
+        <record_name>Work Notes - Test Page - Container 1</record_name>
+        <reverted_from/>
+        <source>788f09c4dbd20010ea51880948961959</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-08 12:26:50</sys_created_on>
+        <sys_id>14ef8214db564010ea518809489619d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f851f2c700000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-08 12:26:50</sys_updated_on>
+        <type>Container</type>
+        <update_guid>5cef82143c564010c857dd1d35bf4cd0</update_guid>
+        <update_guid_history>5cef82143c564010c857dd1d35bf4cd0:1292603479</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Work Notes - Test Page - Container 1">19ef4214db564010ea51880948961979</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-08 12:26:54</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>ae4cc5ec6afb4a3bb96d78bd1d40c6f1</sys_id>
+        <sys_metadata>50ef8a10db564010ea518809489619e4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Work Notes - Test Page - Container 1</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_scope_delete display_value="">64daa03572704d49a928bf08a985d6f9</sys_scope_delete>
+        <sys_update_name>sp_container_50ef8a10db564010ea518809489619e4</sys_update_name>
+        <sys_update_version display_value="sp_container_50ef8a10db564010ea518809489619e4">14ef8214db564010ea518809489619d1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-08 12:26:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
